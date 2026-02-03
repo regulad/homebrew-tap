@@ -1,6 +1,6 @@
 cask "epson-et8500" do
-  version ":latest"
-  sha256 ":no_check"
+  version :latest
+  sha256 :no_check
 
   url "https://ftp.epson.com/drivers/ET8500_Lite_64NR_NA.dmg"
   name "Drivers and Utilities Combo Package Installer"
