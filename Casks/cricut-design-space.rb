@@ -6,7 +6,8 @@ cask "cricut-design-space" do
   def construct_url
     require "json"
     require "open-uri"
-    json_data = JSON.parse(URI.open("https://apis.cricut.com/desktopdownload/InstallerFile?fileName=CricutDesignSpace-Install-v#{version}.dmg&operatingSystem=osxnative").read)
+    # url needs the "shard" component to get the right CDN
+    json_data = JSON.parse(URI.open("https://apis.cricut.com/desktopdownload/InstallerFile?fileName=CricutDesignSpace-Install-v#{version}.dmg&operatingSystem=osxnative&shard=a").read)
     json_data["result"]
   end
 
