@@ -2,12 +2,14 @@ cask "perplexity" do
   version ":latest"
   sha256 ":no_check"
 
+  # not currently working; what kind of AI-slop fueled idiot forgets
+  # to turn off cloudflare protection on their *dedicated CDN domain??*
   url "https://macos-download.perplexity.ai/Perplexity.dmg"
   name "Perplexity"
   desc "Perplexity app for macOS"
   homepage "https://www.perplexity.ai"
 
-  depends_on macos: "sequoia"
+  depends_on macos: ">= :sequoia"
 
   app "Perplexity.dmg"
 
