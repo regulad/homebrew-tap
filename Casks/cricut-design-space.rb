@@ -16,6 +16,9 @@ cask "cricut-design-space" do
   desc "Proprietary vinyl CNC software suite"
   homepage "https://design.cricut.com/"
 
+  # https://help.cricut.com/hc/en-us/articles/360009556033-System-Requirements-Design-Space
+  depends_on macos: ">= :monterey"
+
   app "Cricut Design Space.app"
 
   auto_updates true
