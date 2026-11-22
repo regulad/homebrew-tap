@@ -1,0 +1,15 @@
+# Repository configuration, managed by the Settings app
+# (https://github.com/repository-settings/app). The shared defaults come from
+# regulad/.github; this file sets only what is this repository's own.
+_extends: .github
+
+repository:
+  name: homebrew-tap
+  description: >-
+    Homebrew tap (regulad/tap) with macOS casks for Cricut Design Space, the
+    Epson ET-8500 drivers and Perplexity
+  homepage: ""
+  private: false
+  # Topics: comma-and-space separated string, NOT a YAML list.
+  topics: homebrew, homebrew-tap, homebrew-cask, macos, ruby
+  default_branch: main
