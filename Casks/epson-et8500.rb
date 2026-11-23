@@ -11,7 +11,7 @@ cask "epson-et8500" do
   # Homebrew still has a symbol for, so the cask is only marked as macOS-only.
   depends_on :macos
 
-  # TODO: scope this cask to just the driver packages eventually
+  # TODO(#1): scope this cask to just the driver packages eventually
   # (only really need to do if I ever get another EPSON printer)
   installer manual: "Epson Installer.app"
 
